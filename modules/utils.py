@@ -1,0 +1,10 @@
+def show_menu():
+    print("\n===== LIBRARY MANAGEMENT SYSTEM =====")
+    print("1. Add Book")
+    print("2. View Books")
+    print("3. Search Book")
+    print("4. Add Member")
+    print("5. View Members")
+    print("6. Borrow Book")
+    print("7. Return Book")
+    print("8. Exit")

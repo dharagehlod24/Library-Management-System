@@ -1,5 +1,4 @@
-from modules.books import books
-from modules.members import members
+from modules.data import books, members
 
 
 def borrow_book():

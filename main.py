@@ -1,19 +1,12 @@
 from modules.books import add_book, view_books, search_book
 from modules.members import add_member, view_members
 from modules.transactions import borrow_book, return_book
+from modules.utils import show_menu
 
 
 while True:
 
-    print("\n===== LIBRARY MANAGEMENT SYSTEM =====")
-    print("1. Add Book")
-    print("2. View Books")
-    print("3. Search Book")
-    print("4. Add Member")
-    print("5. View Members")
-    print("6. Borrow Book")
-    print("7. Return Book")
-    print("8. Exit")
+    show_menu()
 
     choice = input("Enter your choice: ")
 
