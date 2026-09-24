@@ -1,34 +1,17 @@
 # Sequence Diagram
 
-## Borrow Book Process
+## Add Book
 
-```text
-User
- |
- | Select Borrow Book
- v
-main.py
- |
- | Call borrow_book()
- v
-transactions.py
- |
- | Check Book
- v
-data.py
- |
- | Book Available
- v
-transactions.py
- |
- | Update Book Status
- v
-data.py
- |
- | Success
- v
-transactions.py
- |
- | Display Result
- v
-User
+User → Main → Books Module → Data → Books Module → User
+
+## Search Book
+
+User → Main → Books Module → Data → Books Module → User
+
+## Borrow Book
+
+User → Main → Transactions Module → Data → Transactions Module → User
+
+## Return Book
+
+User → Main → Transactions Module → Data → Transactions Module → User

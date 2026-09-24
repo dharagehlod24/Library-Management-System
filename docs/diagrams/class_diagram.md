@@ -1,43 +1,39 @@
 # Class Diagram
 
-## Main Components
+The project uses modules and dictionaries instead of Python classes.
 
-```text
-+----------------------+
-|   Library System     |
-+----------------------+
-| main.py              |
-+----------------------+
-          |
-          v
-+----------------------+
-|   Book Management    |
-+----------------------+
-| add_book()           |
-| view_books()         |
-| search_book()        |
-+----------------------+
-          |
-          v
-+----------------------+
-|  Member Management   |
-+----------------------+
-| add_member()         |
-| view_members()       |
-+----------------------+
-          |
-          v
-+----------------------+
-| Borrow & Return      |
-+----------------------+
-| borrow_book()        |
-| return_book()        |
-+----------------------+
-          |
-          v
-+----------------------+
-|      Data            |
-+----------------------+
-| books               |
-| members             |
-+----------------------+
+## Book
+
+- ID
+- Title
+- Author
+- Availability
+
+## Member
+
+- ID
+- Name
+
+## Transaction
+
+- Book ID
+- Member ID
+- Transaction Type
+
+## Modules
+
+Books:
+- add_book()
+- view_books()
+- search_book()
+
+Members:
+- add_member()
+- view_members()
+
+Transactions:
+- borrow_book()
+- return_book()
+
+Utils:
+- show_menu()

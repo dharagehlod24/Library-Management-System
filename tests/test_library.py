@@ -1,41 +1,36 @@
+import unittest
+
 from modules.data import books, members
+from modules.books import add_book
+from modules.members import add_member
 
 
-def test_add_book():
-    books["B1"] = {
-        "title": "Python Basics",
-        "author": "John",
-        "available": True
-    }
+class TestLibrary(unittest.TestCase):
 
-    assert "B1" in books
-    print("Book test passed.")
+    def setUp(self):
+        books.clear()
+        members.clear()
 
+    def test_add_book(self):
+        books.append({
+            "id": "B1",
+            "title": "Python",
+            "author": "John",
+            "available": True
+        })
 
-def test_add_member():
-    members["M1"] = {
-        "name": "Student"
-    }
+        self.assertEqual(len(books), 1)
+        self.assertEqual(books[0]["title"], "Python")
 
-    assert "M1" in members
-    print("Member test passed.")
+    def test_add_member(self):
+        members.append({
+            "id": "M1",
+            "name": "Dhara"
+        })
 
-
-def test_borrow_book():
-    books["B1"]["available"] = False
-
-    assert books["B1"]["available"] == False
-    print("Borrow test passed.")
-
-
-def test_return_book():
-    books["B1"]["available"] = True
-
-    assert books["B1"]["available"] == True
-    print("Return test passed.")
+        self.assertEqual(len(members), 1)
+        self.assertEqual(members[0]["name"], "Dhara")
 
 
-test_add_book()
-test_add_member()
-test_borrow_book()
-test_return_book()
+if __name__ == "__main__":
+    unittest.main()

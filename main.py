@@ -32,7 +32,7 @@ while True:
         return_book()
 
     elif choice == "8":
-        print("Thank you for using the Library Management System.")
+        print("Thank you for using Library Management System.")
         break
 
     else:

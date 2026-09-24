@@ -1,3 +1,3 @@
-books = {}
-
-members = {}
+books = []
+members = []
+transactions = []

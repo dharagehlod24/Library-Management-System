@@ -1,49 +1,41 @@
 # Library Management System
 
-## Overview
+## Introduction
 
-The Library Management System is a simple Python project that helps manage books, library members, and book transactions.
+The Library Management System is a basic Python project used to manage books, members, and library transactions.
 
 ## Features
 
-- Add books
-- View books
-- Search for books
-- Add members
-- View members
-- Borrow books
-- Return books
+- Add Book
+- View Books
+- Search Book
+- Add Member
+- View Members
+- Borrow Book
+- Return Book
 
 ## Technologies Used
 
 - Python
-- Dictionaries
-- Functions
-- Loops
-- Conditional statements
-- Modules
+- Visual Studio Code
+- Git
+- GitHub
 
-## Project Structure
+## Modules
 
-```text
-Library_Management_System/
-│
-├── main.py
-│
-├── modules/
-│   ├── books.py
-│   ├── members.py
-│   ├── transactions.py
-│   ├── data.py
-│   └── utils.py
-│
-├── tests/
-│   └── test_library.py
-│
-├── docs/
-│   ├── statement.md
-│   ├── architecture.md
-│   └── diagrams/
-│
-├── README.md
-└── requirements.txt
+- books.py
+- members.py
+- transactions.py
+- data.py
+- utils.py
+- main.py
+
+## How to Run
+
+Run the following command:
+
+python main.py
+
+## Author
+
+Dhara Gehlod

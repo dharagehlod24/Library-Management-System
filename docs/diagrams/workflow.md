@@ -1,35 +1,10 @@
-# Workflow Diagram
+# Workflow
 
-## Library Management System Workflow
-
-```text
-Start
-  |
-  v
-Display Main Menu
-  |
-  v
-User Selects an Option
-  |
-  +---- Add Book ------> Save Book ------+
-  |                                      |
-  +---- View Books ----------------------+
-  |                                      |
-  +---- Search Book ---------------------+
-  |                                      |
-  +---- Add Member ----> Save Member ---+
-  |                                      |
-  +---- View Members --------------------+
-  |                                      |
-  +---- Borrow Book ---> Check Book -----+
-  |                                      |
-  +---- Return Book ---> Update Book ----+
-                                         |
-                                         v
-                                  Display Result
-                                         |
-                                         v
-                                  Return to Menu
-                                         |
-                                         v
-                                       Exit
+1. Start the program.
+2. Display the main menu.
+3. User selects an option.
+4. The selected function is executed.
+5. The required data is updated.
+6. The result is displayed.
+7. The menu is displayed again.
+8. The program continues until the user selects Exit.

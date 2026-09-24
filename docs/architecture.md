@@ -1,30 +1,17 @@
 # System Architecture
 
-## Overview
+The system uses a simple modular architecture.
 
-The Library Management System is divided into three main functional modules:
+main.py controls the program and displays the menu.
 
-1. Book Management
-2. Member Management
-3. Borrow and Return
+books.py manages books.
 
-## Architecture
+members.py manages library members.
 
-```text
-            Library Management System
-                         |
-          +--------------+--------------+
-          |              |              |
-          v              v              v
-   Book Management  Member Management  Borrow & Return
-          |              |              |
-          v              v              v
-       books.py       members.py    transactions.py
-          |              |              |
-          +--------------+--------------+
-                         |
-                         v
-                      data.py
-                         |
-                         v
-                  Shared Library Data
+transactions.py manages borrowing and returning books.
+
+data.py stores books, members, and transactions.
+
+utils.py displays the main menu.
+
+The modules are connected through main.py and data.py.
